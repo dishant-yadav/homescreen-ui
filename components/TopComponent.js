@@ -17,7 +17,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const TopComponent = () => {
   return (
-    <Box pt={16} bgColor={'gray.500'}>
+    <Box pt={16} bgColor={'gray.500'} roundedBottom={'15'} shadow={2}>
       <Center>
         <HStack space={2}>
           <Input
