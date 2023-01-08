@@ -19,7 +19,7 @@ const MyTeam = () => {
       <Box
         w={370}
         mx={4}
-        my={2}
+        my={1}
         rounded="xl"
         overflow="hidden"
         shadow={'4'}

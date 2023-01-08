@@ -1,4 +1,5 @@
 import React from 'react';
+// native base components
 import {
   HStack,
   Text,
@@ -10,24 +11,35 @@ import {
   ScrollView,
   VStack,
 } from 'native-base';
+// react native components
 import {View} from 'react-native';
+
+// components
 import TopComponent from './components/TopComponent';
 import MyTeam from './components/MyTeam';
 import QuickLink from './components/QuickLink';
 import Celebrations from './components/Celebration';
 import MyTask from './components/MyTasks';
+import Clock from './components/Clock.js';
+
+// navigation
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+
+// logbox
 import {LogBox} from 'react-native';
+// material icon
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+
 LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
 LogBox.ignoreAllLogs(); //Ignore all log notifications
 
-function Home() {
+const Home = () => {
   return (
     <ScrollView flex={1} bgColor={'white'}>
       <VStack space={1}>
         <TopComponent />
+        <Clock />
         <MyTeam />
         <QuickLink />
         <Celebrations />
@@ -35,7 +47,7 @@ function Home() {
       </VStack>
     </ScrollView>
   );
-}
+};
 
 const MySpace = () => {
   return (
