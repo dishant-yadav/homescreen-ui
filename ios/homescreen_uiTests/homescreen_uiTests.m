@@ -1,4 +1,4 @@
-#import <UIKit/UIKit.h>
+git remote add origin git@github.com:dishant-yadav/homescreen-ui.git#import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
 #import <React/RCTLog.h>
