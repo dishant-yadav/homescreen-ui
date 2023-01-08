@@ -7,17 +7,20 @@ import {
   NativeBaseProvider,
   Divider,
   Spacer,
+  ScrollView,
 } from 'native-base';
 import TopComponent from './components/TopComponent';
 import MyTeam from './components/MyTeam';
+import QuickLink from './components/QuickLink';
 
 const App = () => {
   return (
     <NativeBaseProvider>
-      <Box flex={1} bgColor={'gray.300'}>
+      <ScrollView flex={1} bgColor={'gray.300'}>
         <TopComponent />
         <MyTeam />
-      </Box>
+        <QuickLink />
+      </ScrollView>
     </NativeBaseProvider>
   );
 };
