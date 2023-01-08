@@ -10,6 +10,7 @@ import {
   Box,
   Spacer,
 } from 'native-base';
+import {TouchableOpacity} from 'react-native';
 import TopFlatlist from '../components/TopFlatlist';
 import DividerWhite from './DividerWhite';
 
@@ -41,9 +42,11 @@ const TopComponent = () => {
         <Text fontWeight={700} fontSize={'md'}>
           Announcements
         </Text>
-        <Text color={'green.700'} underline fontWeight={500}>
-          View All
-        </Text>
+        <TouchableOpacity>
+          <Text color={'green.700'} underline fontWeight={500}>
+            View All
+          </Text>
+        </TouchableOpacity>
       </HStack>
       <TopFlatlist />
       <DividerWhite />

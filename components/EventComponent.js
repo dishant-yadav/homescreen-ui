@@ -1,5 +1,6 @@
 import React from 'react';
 import {Avatar, Box, ChevronRightIcon, HStack, Text, Circle} from 'native-base';
+import {TouchableOpacity} from 'react-native';
 
 const EventComponent = ({eventType, name, imageURI, bgColor}) => {
   return (
@@ -39,10 +40,17 @@ const EventComponent = ({eventType, name, imageURI, bgColor}) => {
             alignItems={'center'}
             space={3}
             w="1/4">
-            <Text fontSize="16" fontWeight={600} style={{textAlign: 'left'}}>
-              {name}
-            </Text>
-            <ChevronRightIcon size="5" />
+            <TouchableOpacity>
+              <HStack justifyContent={'center'} alignItems={'center'} space={2}>
+                <Text
+                  fontSize="16"
+                  fontWeight={600}
+                  style={{textAlign: 'left'}}>
+                  {name}
+                </Text>
+                <ChevronRightIcon size="5" />
+              </HStack>
+            </TouchableOpacity>
           </HStack>
         </HStack>
       </Box>

@@ -93,6 +93,7 @@ const MyTeamList = () => {
                 {item.jobRole}
               </Text>
               <HStack
+                mr="2"
                 w="1/4"
                 alignSelf={'center'}
                 justifyContent={'center'}

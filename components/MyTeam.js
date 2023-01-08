@@ -10,6 +10,7 @@ import {
   Stack,
   NativeBaseProvider,
 } from 'native-base';
+import {TouchableOpacity} from 'react-native';
 import MyTeamList from './MyTeamList';
 
 const MyTeam = () => {
@@ -34,9 +35,11 @@ const MyTeam = () => {
           <Text fontWeight={600} fontSize={'md'}>
             My Team
           </Text>
-          <Text color={'green.700'} underline fontWeight={500}>
-            View All
-          </Text>
+          <TouchableOpacity>
+            <Text color={'green.700'} underline fontWeight={500}>
+              View All
+            </Text>
+          </TouchableOpacity>
         </HStack>
         <MyTeamList />
       </Box>
