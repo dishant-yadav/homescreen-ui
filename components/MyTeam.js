@@ -25,7 +25,7 @@ const MyTeam = () => {
         shadow={'4'}
         borderColor="coolGray.200"
         borderWidth="1"
-        bgColor={'gray.100'}>
+        bgColor={'white'}>
         <HStack
           alignItems={'center'}
           justifyContent={'space-between'}

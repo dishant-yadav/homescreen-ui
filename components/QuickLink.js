@@ -14,7 +14,7 @@ const QuickLink = () => {
         shadow={'4'}
         borderColor="coolGray.200"
         borderWidth="1"
-        bgColor={'gray.100'}>
+        bgColor={'white'}>
         <Text py={6} pl={3} fontWeight={600} fontSize={'md'} color={'black'}>
           Quick Links
         </Text>

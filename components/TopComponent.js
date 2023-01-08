@@ -13,12 +13,13 @@ import {
 import {TouchableOpacity} from 'react-native';
 import TopFlatlist from '../components/TopFlatlist';
 import DividerWhite from './DividerWhite';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const TopComponent = () => {
   return (
-    <Box mt={16}>
+    <Box pt={16} bgColor={'gray.500'}>
       <Center>
-        <HStack space={3}>
+        <HStack space={2}>
           <Input
             placeholder="Search"
             placeholderTextColor={'gray.700'}
@@ -30,7 +31,7 @@ const TopComponent = () => {
             px="2"
             InputLeftElement={<SearchIcon size="4" color="gray.500" ml="2" />}
           />
-          <PlayIcon size="8" color={'green.900'} />
+          <Icon name="message" size={40} color="green" />
         </HStack>
       </Center>
       <HStack

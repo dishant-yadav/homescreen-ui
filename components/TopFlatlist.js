@@ -10,6 +10,7 @@ import {
   Spacer,
   Center,
   NativeBaseProvider,
+  WarningIcon,
 } from 'native-base';
 
 const TopFlatlist = () => {
@@ -75,13 +76,9 @@ const TopFlatlist = () => {
               justifyContent={'flex-start'}
               alignItems={'flex-start'}
               space={3}>
-              <Avatar
-                size={12}
-                source={{
-                  uri: item.avatarUrl,
-                }}>
-                A
-              </Avatar>
+              <Box size={12}>
+                <WarningIcon size="12" />
+              </Box>
               <VStack>
                 <Text fontWeight={600} numberOfLines={1}>
                   {item.messageText}
