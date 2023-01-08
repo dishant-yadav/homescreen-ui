@@ -1,41 +1,45 @@
 import React from 'react';
-import {Avatar, Box, ChevronRightIcon, HStack, Text} from 'native-base';
+import {Avatar, Box, ChevronRightIcon, HStack, Text, Circle} from 'native-base';
 
-const EventComponent = ({eventType, name, imageURI}) => {
+const EventComponent = ({eventType, name, imageURI, bgColor}) => {
   return (
     <Box>
       <Box
         alignSelf="center" // bg="primary.500"
         w={'100%'}
-        h={'20'}
+        h={'24'}
         _text={{
           fontSize: 'md',
           fontWeight: 'medium',
           color: 'warmGray.50',
           letterSpacing: 'lg',
         }}
-        rounded={'lg'}
-        mb={'6'}
-        bg={['red.300', 'blue.400']}>
+        rounded={'2xl'}
+        mb={'8'}
+        bg={bgColor}>
         <HStack
           mx={3}
           alignItems="center"
           justifyContent={'space-between'}
           h="100%">
-          <Text fontSize="16" fontWeight={400} w="2/6">
+          <Text fontSize="14" fontWeight={500} w="1/4" ml={2}>
             {eventType}
           </Text>
-          <Box position={'relative'}>
+          <Circle size="125px" bg={bgColor}>
             <Avatar
-              size={'xl'}
+              size={'100px'}
               source={{
                 uri: imageURI,
               }}>
               .
             </Avatar>
-          </Box>
-          <HStack justifyContent={'center'} alignItems={'center'}>
-            <Text fontSize="14" fontWeight={600} w="2/6">
+          </Circle>
+          <HStack
+            justifyContent={'center'}
+            alignItems={'center'}
+            space={3}
+            w="1/4">
+            <Text fontSize="16" fontWeight={600} style={{textAlign: 'left'}}>
               {name}
             </Text>
             <ChevronRightIcon size="5" />
