@@ -34,7 +34,7 @@ const MyTeam = () => {
           <Text fontWeight={600} fontSize={'md'}>
             My Team
           </Text>
-          <Text color={'green.700'} underline fontWeight={400}>
+          <Text color={'green.700'} underline fontWeight={500}>
             View All
           </Text>
         </HStack>

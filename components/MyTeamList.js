@@ -71,7 +71,7 @@ const MyTeamList = () => {
                 ml={4}
               />
               <Text
-                ml={10}
+                ml={8}
                 w="1/4"
                 style={{textAlign: 'left'}}
                 _dark={{
@@ -84,7 +84,7 @@ const MyTeamList = () => {
               </Text>
               <Text
                 w="1/4"
-                ml={4}
+                ml={2}
                 style={{textAlign: 'left'}}
                 color="coolGray.600"
                 _dark={{
@@ -102,7 +102,7 @@ const MyTeamList = () => {
                   size={3}
                   mt="2"
                   source={{
-                    uri: '',
+                    uri: 'xyz',
                   }}>
                   .
                 </Avatar>

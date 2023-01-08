@@ -12,6 +12,7 @@ import {
 import TopComponent from './components/TopComponent';
 import MyTeam from './components/MyTeam';
 import QuickLink from './components/QuickLink';
+import Celebrations from './components/Celebration.js';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <TopComponent />
         <MyTeam />
         <QuickLink />
+        <Celebrations />
       </ScrollView>
     </NativeBaseProvider>
   );

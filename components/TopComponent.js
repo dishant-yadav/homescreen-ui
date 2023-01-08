@@ -41,7 +41,7 @@ const TopComponent = () => {
         <Text fontWeight={700} fontSize={'md'}>
           Announcements
         </Text>
-        <Text color={'green.700'} underline fontWeight={400}>
+        <Text color={'green.700'} underline fontWeight={500}>
           View All
         </Text>
       </HStack>

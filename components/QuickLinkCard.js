@@ -11,7 +11,12 @@ const Card = ({text}) => {
       justifyContent={'center'}
       alignItems={'center'}>
       <ArrowUpIcon />
-      <Text fontSize={16} color={'gray.800'} numberOfLines={2} px={3} style={{textAlign:"center"}}>
+      <Text
+        fontSize={16}
+        color={'gray.800'}
+        numberOfLines={2}
+        px={3}
+        style={{textAlign: 'center'}}>
         {text}
       </Text>
     </Box>
