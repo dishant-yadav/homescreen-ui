@@ -13,6 +13,7 @@ import {
   View,
   Flex,
 } from 'native-base';
+import {Circle} from 'react-native-svg';
 
 const MyTeamList = () => {
   const data = [
@@ -98,15 +99,7 @@ const MyTeamList = () => {
                 alignSelf={'center'}
                 justifyContent={'center'}
                 space={2}>
-                <Avatar
-                  bg="green.600"
-                  size={3}
-                  mt="2"
-                  source={{
-                    uri: 'xyz',
-                  }}>
-                  .
-                </Avatar>
+                <Box size="12px" bg="green.600" rounded={'lg'} mt={1.5}></Box>
                 <Text
                   style={{textAlign: 'center'}}
                   color="coolGray.600"
