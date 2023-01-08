@@ -57,7 +57,7 @@ const TopFlatlist = () => {
     },
   ];
   return (
-    <Box mt={5} mx={3}>
+    <Box mt={5} ml={3} mb={8}>
       <FlatList
         horizontal
         data={data}

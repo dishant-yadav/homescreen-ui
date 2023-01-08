@@ -10,7 +10,8 @@ import {
   Box,
   Spacer,
 } from 'native-base';
-import TopFlatlist from '../TopFlatlist';
+import TopFlatlist from '../components/TopFlatlist';
+import DividerWhite from './DividerWhite';
 
 const TopComponent = () => {
   return (
@@ -45,6 +46,7 @@ const TopComponent = () => {
         </Text>
       </HStack>
       <TopFlatlist />
+      <DividerWhite />
     </Box>
   );
 };
