@@ -15,7 +15,7 @@ const QuickLink = () => {
         borderColor="coolGray.200"
         borderWidth="1"
         bgColor={'gray.100'}>
-        <Text py={6} pl={3} fontWeight={600} fontSize={'md'}>
+        <Text py={6} pl={3} fontWeight={600} fontSize={'md'} color={'black'}>
           Quick Links
         </Text>
         <HStack space="3" alignItems="center" pb="4">

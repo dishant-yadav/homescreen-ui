@@ -24,7 +24,7 @@ const TopFlatlist = () => {
     },
     {
       id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
-
+      messageText: 'Employees are expected to clock...',
       timeStamp: '2 hour ago',
       avatarUrl:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyEaZqT3fHeNrPGcnjLLX1v_W4mvBlgpwxnA&usqp=CAU',
